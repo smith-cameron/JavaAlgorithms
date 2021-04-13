@@ -129,11 +129,10 @@ public class Algo {
     } 
 	//Swapping two values
 	public String swapperoo(int[] input) {
-		for(int i = 0; i < input.length; i++) {
-			int temp = input[0];
-			input[0] = input[input.length-1];
-			input[input.length-1] = temp;
-		}
+		int first = input[0];
+		int last = input[input.length-1];
+		input[0] = last;
+		input[input.length-1] = first;
 		return Arrays.toString(input);
 	}
 }
