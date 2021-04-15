@@ -105,10 +105,8 @@ public class Algo {
 	public String getShwifty(int[] arr) {
 		for(int i = 0; i < arr.length -1; i++) {
 			int temp = arr[i];
-			@SuppressWarnings("unused")
-			int next = arr[i+1];
 			arr[i] = arr[i+1];
-			next = temp;
+			arr[i+1] = temp;
 		}
 		arr[arr.length-1] = 0;
 		return Arrays.toString(arr);
@@ -130,9 +128,31 @@ public class Algo {
 	//Swapping two values
 	public String swapperoo(int[] input) {
 		int first = input[0];
-		int last = input[input.length-1];
-		input[0] = last;
+		input[0] = input[input.length-1];
 		input[input.length-1] = first;
+		return Arrays.toString(input);
+	}
+	//Reverse
+	public String reverse(int[] input) {
+		for(int i = 0; i < input.length/2; i++) {
+			int temp = input[i]; 
+			input[i] = input[input.length-1-i];
+			input[input.length-1-i] = temp;
+		}
+		return Arrays.toString(input);
+	}
+	//Insert X in Y
+	public String insert(int[] input, int index, int value) {
+		input[index] = value;
+		return Arrays.toString(input);
+	}
+	//Removing Negatives
+	public String removeNegatives(int[] input) {
+		for(int i = 0; i < input.length; i++) {
+			if(input[i] < 0) {
+				input[i] *= -1;
+			}
+		}
 		return Arrays.toString(input);
 	}
 }
