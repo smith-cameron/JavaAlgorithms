@@ -165,6 +165,14 @@ public class Algo {
 		}
 		return index;
 	}
+	//Iterate to Sum
+	public int iSum(int input) {
+		int sum = 0;
+		for(int i = 0; i <= input; i++) {
+			sum += i;
+		}
+		return sum;
+	}
 }
 
 

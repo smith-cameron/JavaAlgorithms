@@ -24,7 +24,8 @@ public class AlgosController {
 		//System.out.println(algorithm.reverse(myArr));
 		//System.out.println(algorithm.insert(myArr, index, value));
 		//System.out.println(algorithm.removeNegatives(myArr));
-		System.out.println(algorithm.linearSearch(myArr, value));
+		//System.out.println(algorithm.linearSearch(myArr, value));
+		System.out.println(algorithm.iSum(value));
 	}
 
 }
