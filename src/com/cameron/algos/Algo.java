@@ -155,6 +155,16 @@ public class Algo {
 		}
 		return Arrays.toString(input);
 	}
+	//Linear Search
+	public Integer linearSearch(int[] input, int value) {
+		Integer index = null;
+		for(int i = 0; i < input.length; i++) {
+			if(input[i] == value) {
+				index = i;
+			}
+		}
+		return index;
+	}
 }
 
 
