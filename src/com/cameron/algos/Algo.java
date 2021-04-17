@@ -173,6 +173,14 @@ public class Algo {
 		}
 		return sum;
 	}
+	//Iterate Factorial
+	public int iFactorial(int input) {
+		int fact = 1;
+		for(int i = 1; i <= input; i++) {
+			fact *= i;
+		}
+		return fact;
+	}
 }
 
 
