@@ -3,7 +3,7 @@ package com.cameron.algos;
 public class AlgosController {
 	public static void main(String[] args) {
 		Algo algorithm = new Algo();
-		int[] myArr = {2,-3,10,7,9,-4};
+		//int[] myArr = {2,-3,10,7,9,-4};
 		//int index = 2;
 		int value = 5;
 		//double[] myArr1 = {1,3,5,7,20};
@@ -26,7 +26,8 @@ public class AlgosController {
 		//System.out.println(algorithm.removeNegatives(myArr));
 		//System.out.println(algorithm.linearSearch(myArr, value));
 		//System.out.println(algorithm.iSum(value));
-		System.out.println(algorithm.iFactorial(value));
+		//System.out.println(algorithm.iFactorial(value));
+		System.out.println(algorithm.rFactorial(value));
 	}
 
 }

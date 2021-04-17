@@ -181,6 +181,14 @@ public class Algo {
 		}
 		return fact;
 	}
+	//Recursive Factorial
+	public int rFactorial(int input) {
+		if (input == 1) {
+		    return 1;
+		  } else {
+		    return rFactorial(input - 1) * input;
+		  }
+	}
 }
 
 
