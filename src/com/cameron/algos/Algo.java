@@ -189,6 +189,29 @@ public class Algo {
 		    return rFactorial(input - 1) * input;
 		  }
 	}
+	//Iterative Fibonacci
+	public int iFibonacci(int input) {
+		if(input == 2) {
+			return 1;
+		}
+		int num1 = 0;
+		int num2 = 1;
+		int sum = 0;
+		for(int i = 1; i < input; i++) {
+			sum = num1 + num2;
+			num1 = num2;
+			num2 = sum;
+		}
+		return num2;
+	}
+	//Recursive Fibonacci
+	public int rFibonacci(int input) {
+		if (input <= 2) {
+		    return 1;
+		  } else {
+			  return rFibonacci(input - 1) + rFibonacci(input - 2);
+		  }
+	}
 }
 
 

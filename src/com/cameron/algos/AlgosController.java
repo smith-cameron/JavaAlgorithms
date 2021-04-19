@@ -5,7 +5,7 @@ public class AlgosController {
 		Algo algorithm = new Algo();
 		//int[] myArr = {2,-3,10,7,9,-4};
 		//int index = 2;
-		int value = 5;
+		int value = 7;
 		//double[] myArr1 = {1,3,5,7,20};
 		//algorithm.printNums();
 		//algorithm.printOdds();
@@ -27,7 +27,9 @@ public class AlgosController {
 		//System.out.println(algorithm.linearSearch(myArr, value));
 		//System.out.println(algorithm.iSum(value));
 		//System.out.println(algorithm.iFactorial(value));
-		System.out.println(algorithm.rFactorial(value));
+		//System.out.println(algorithm.rFactorial(value));
+		//System.out.println(algorithm.iFibonacci(value));
+		//System.out.println(algorithm.rFibonacci(value));
 	}
 
 }
