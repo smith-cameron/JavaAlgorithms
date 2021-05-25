@@ -29,7 +29,7 @@ public class AlgosController {
 		//System.out.println(algorithm.iFactorial(value));
 		//System.out.println(algorithm.rFactorial(value));
 		//System.out.println(algorithm.iFibonacci(value));
-		//System.out.println(algorithm.rFibonacci(value));
+		System.out.println(algorithm.rFibonacci(value));
 	}
 
 }
